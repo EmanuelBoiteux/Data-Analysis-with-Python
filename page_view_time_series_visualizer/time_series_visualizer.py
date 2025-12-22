@@ -76,7 +76,8 @@ def draw_box_plot():
         ax=axes[0],
         hue='year',
         legend=False,
-        palette='tab10'
+        palette='tab10',
+        orientation='vertical'
     )
     
     axes[0].set_title("Year-wise Box Plot (Trend)", fontsize=25)
@@ -96,7 +97,8 @@ def draw_box_plot():
         ax=axes[1],
         hue='month',
         legend=False,
-        palette='husl'
+        palette='husl',
+        orientation='vertical'
     )
     
     axes[1].set_title("Month-wise Box Plot (Seasonality)", fontsize=25)
